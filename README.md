@@ -24,6 +24,29 @@
   > [TextLCD](https://github.com/Byung-moon/SOC-Programming/tree/master/SoC_Term/ip_repo/textlcd_1.0/hdl)
   
   
+  
+  ### Main PGM
+  
+  > [main.c](https://github.com/Byung-moon/SOC-Programming/blob/master/SoC_Term/term_proj/term_project.sdk/ps_term_project/src/main.c)
+  
+  
+  #### 제어 변수
+  ```
+  char mode=0;                     //mode =0 : clock      mode=1 : timer	mode=2 : Alarm
+  
+  volatile char set_time = 0;      // 타임 세팅 동작 제어 변수
+  volatile char hour = 0;          // 시간(Hour) 설정 제어 변수
+  volatile char minute = 0;        // 분(Minute) 설정 제어 변수
+  volatile char second = 0;        // 초(Second) 설정 제어 변수
+  
+  volatile char set_alarm = 0;     // 알람 세팅 동작 제어 변수
+  volatile char alarm_hour = 0;    // 알람 시간 설정 제어 변수
+  volatile char alarm_minute = 0;  // 알람 분 설정 제어 변수
+  volatile char alarm_second = 0;  // 알람 초 설정 제어 변수
+  
+  ```
+  
+  
  
  
  
