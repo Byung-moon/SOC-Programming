@@ -47,6 +47,26 @@
   ```
   
   
+  #### RTC 에서 시간 읽어오기
+  ```
+  int ReadRTC(XIicPs Iic, u8 *SendBuffer, u8 *RecvBuffer)
+  {
+  
+       ... 생략 ...
+
+      *SendBuffer		= 0x02;     // SendBuffer 와 RecvBuffer를 통해서 시간 저장  
+     RecvBuffer[0]	= 0x00;
+     RecvBuffer[1]	= 0x00;
+     RecvBuffer[2]	= 0x00;
+     
+     Status = XIicPs_MasterSendPolled(&Iic, SendBuffer, 1, IIC_SLAVE_ADDR); // XIicPs_MasterSendPolled 함수를 통해 I2C 통신 
+
+	      ... 생략 ...
+       
+  }
+  ```
+  
+  
  
  
  
