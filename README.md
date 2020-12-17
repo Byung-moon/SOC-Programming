@@ -61,7 +61,25 @@
      
      Status = XIicPs_MasterSendPolled(&Iic, SendBuffer, 1, IIC_SLAVE_ADDR); // XIicPs_MasterSendPolled 함수를 통해 I2C 통신 
 
-	      ... 생략 ...
+       ... 생략 ...
+       
+  }
+  ```
+  
+  
+  #### RTC 시간 쓰기
+  ```
+  int WriteRTC(XIicPs Iic, u8 *WriteBuffer, char set, char val)
+  {
+  
+       ... 생략 ...
+
+      WriteBuffer[0] = set;	// set 변수를 통해 시, 분, 초 선택
+      WriteBuffer[1] = val;	// val 변수를 통해 RTC의 레지스터에 값 Write
+     
+     Status = XIicPs_MasterSendPolled(&Iic, WriteBuffer, 2, IIC_SLAVE_ADDR); // XIicPs_MasterSendPolled 함수를 통해 RTC와 I2C 통신 
+
+       ... 생략 ...
        
   }
   ```
