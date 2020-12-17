@@ -10,4 +10,20 @@
   
   
   ![Flow Chart](images/flowchart.PNG)
+  
+  
+  
+  ### 설계한 IP
+  
+  > [LED](https://github.com/Byung-moon/SOC-Programming/tree/master/SoC_Term/ip_repo/led_9.0/hdl)
+  
+  > [Push Botton](https://github.com/Byung-moon/SOC-Programming/tree/master/SoC_Term/ip_repo/pushbutton_1.0/hdl)
+  
+  > [Seven Segment](https://github.com/Byung-moon/SOC-Programming/tree/master/SoC_Term/ip_repo/seven_seg_1.0/hdl)
+  
+  > [TextLCD](https://github.com/Byung-moon/SOC-Programming/tree/master/SoC_Term/ip_repo/textlcd_1.0/hdl)
+  
+  
+ 
+ 
  
